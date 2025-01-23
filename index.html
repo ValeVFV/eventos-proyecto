@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Registro de Eventos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Registrar Evento</h1>
+  <form id="form-evento">
+    <label for="nombre">Nombre del evento:</label>
+    <input type="text" id="nombre" required>
+
+    <label for="fecha-inicio">Fecha de inicio:</label>
+    <input type="date" id="fecha-inicio" required>
+
+    <label for="fecha-fin">Fecha de fin:</label>
+    <input type="date" id="fecha-fin" required>
+
+    <label for="ubicacion">Ubicación:</label>
+    <input type="text" id="ubicacion" required>
+
+    <label for="encargado">Nombre del encargado:</label>
+    <input type="text" id="encargado" required>
+
+    <label for="telefono">Teléfono del encargado:</label>
+    <input type="tel" id="telefono" required>
+
+    <label for="confirmacion">¿Confirmar evento?</label>
+    <input type="checkbox" id="confirmacion">
+
+    <button type="submit">Registrar</button>
+  </form>
+
+  <h2>Eventos Registrados</h2>
+  <table border="1">
+    <thead>
+      <tr>
+        <th>Nombre</th>
+        <th>Fecha Inicio</th>
+        <th>Fecha Fin</th>
+        <th>Ubicación</th>
+        <th>Encargado</th>
+        <th>Teléfono</th>
+        <th>Confirmado</th>
+      </tr>
+    </thead>
+    <tbody id="tabla-eventos"></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
